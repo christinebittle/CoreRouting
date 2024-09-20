@@ -68,8 +68,8 @@ namespace CoreRouting.Controllers
         /// </summary>
         /// <returns>An HTTP response with a body indicating the usage, echoing the value of queryParam1 and queryParam2.</returns>
         /// <example>
-        /// GET api/Route/Get3?queryParam1=20queryParam2=5 -> Received a GET request with two parameters. queryParam1:20 queryParam2:5
-        /// GET api/Route/Get3?queryParam1=6queryParam2=-1 -> Received a GET request with two parameters. queryParam1:6 queryParam2:-1
+        /// GET api/Route/Get3?queryParam1=20&queryParam2=5 -> Received a GET request with two parameters. queryParam1:20 queryParam2:5
+        /// GET api/Route/Get3?queryParam1=6&queryParam2=-1 -> Received a GET request with two parameters. queryParam1:6 queryParam2:-1
         /// </example>
         [HttpGet(template: "Get3")]
         public string Get3(int queryParam1, int queryParam2)
@@ -82,8 +82,8 @@ namespace CoreRouting.Controllers
         /// </summary>
         /// <returns>An HTTP response with the response body indicating the usage, echoing the value of queryParam1, queryParam2, and queryParam3.</returns>
         /// <example>
-        /// GET api/Route/Get4?queryParam1=helloqueryParam2=2queryParam3=people -> Received a GET request with three parameters. queryParam1: hello queryParam2: 2 queryParam3: people
-        /// GET api/Route/Get4?queryParam1=testqueryParam2=0queryParam3=test -> Received a GET request with three parameters. queryParam1: test queryParam2: 0 queryParam3: test
+        /// GET api/Route/Get4?queryParam1=hello&queryParam2=2&queryParam3=people -> Received a GET request with three parameters. queryParam1: hello queryParam2: 2 queryParam3: people
+        /// GET api/Route/Get4?queryParam1=test&queryParam2=0&queryParam3=test -> Received a GET request with three parameters. queryParam1: test queryParam2: 0 queryParam3: test
         /// </example>
         [HttpGet(template: "Get4")]
         public string Get4(string queryParam1, int queryParam2, string queryParam3)
